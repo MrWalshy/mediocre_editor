@@ -15,8 +15,8 @@ public class GetCaretPosition extends MeditorCommand {
 		if (args.length != getArity()) throw new MeditorCommandException("'getCaret' expects 0 arguments but got '" + args.length + "'");
 		return display.getDisplay()
 					  .getActiveWindow()
-					  .getContent()
-					  .getCaretPosition();
+					  .getContent();
+//					  .getCaretPosition();
 	}
 
 	@Override

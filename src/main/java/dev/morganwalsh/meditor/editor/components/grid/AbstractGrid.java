@@ -1,7 +1,5 @@
 package dev.morganwalsh.meditor.editor.components.grid;
 
-import dev.morganwalsh.meditor.editor.components.MeditorWindowNew;
-
 import java.awt.BorderLayout;
 import java.util.ArrayList;
 import java.util.List;

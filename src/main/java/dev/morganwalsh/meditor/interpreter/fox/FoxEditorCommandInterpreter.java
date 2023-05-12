@@ -2,9 +2,7 @@ package dev.morganwalsh.meditor.interpreter.fox;
 
 import java.util.List;
 
-import dev.morganwalsh.meditor.editor.MeditorCommandBridge;
-
-public class FoxEditorCommandInterpreter extends MeditorCommandBridge implements Interpreter {
+public class FoxEditorCommandInterpreter implements Interpreter {
 	
 	@Override
 	public Object interpret(String input) {
@@ -13,7 +11,7 @@ public class FoxEditorCommandInterpreter extends MeditorCommandBridge implements
 		if (input.startsWith("bufferMessage ")) {
 			String[] command = input.split("bufferMessage ");
 			System.out.println(command[1]);
-			editorCommands.get("bufferMessage").execute(new Object[]{ command[1]});
+//			editorCommands.get("bufferMessage").execute(new Object[]{ command[1]});
 		}
 		return null;
 	}

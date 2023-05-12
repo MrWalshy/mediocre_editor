@@ -1,6 +1,7 @@
 package dev.morganwalsh.meditor.editor.components;
 
 import java.awt.Color;
+import java.util.concurrent.BlockingQueue;
 
 import javax.swing.JTextField;
 

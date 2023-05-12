@@ -1,10 +1,10 @@
 package dev.morganwalsh.meditor.editor.command;
 
-import javax.swing.SwingUtilities;
+import javax.swing.*;
 
 import dev.morganwalsh.meditor.editor.UI;
 
-public abstract class MeditorCommand {
+public abstract class MeditorCommand<T extends JComponent> {
 	
 	protected String name;
 	protected UI display;
