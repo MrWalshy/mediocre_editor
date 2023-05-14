@@ -57,6 +57,7 @@ public class UI extends JFrame {
 				if (e.getKeyCode() == 10) {
 					try {
 						commandQueue.put(commandBar.getText());
+						System.out.println("Command sent from thread: " + Thread.currentThread().getName());
 						commandBar.setText("");
 					} catch (InterruptedException ex) {
 						ex.printStackTrace();
